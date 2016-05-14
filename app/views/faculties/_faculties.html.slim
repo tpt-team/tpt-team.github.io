@@ -1,0 +1,4 @@
+- university.faculties.each_slice(4) do |group|
+  .row
+    = render partial: 'faculties/faculty', collection: group
+= paginate university.faculties.page(params[:page]).per(8)

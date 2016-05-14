@@ -1,7 +1,7 @@
 class DocumentsController < ApplicationController
 
   expose(:document)
-  expose(:documents) {|default| default.page(params[:page]).per(8)}
+  expose(:documents)# {|default| default.where(confirmed: true).page(params[:page]).per(8)}
 
   def create
     document.save
