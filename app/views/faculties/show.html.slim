@@ -1,2 +1,12 @@
-h1 show faculty
+.page-header
+  h1
+    = faculty.title
+= link_to "Университеты/", root_path
+= link_to university.title.to_s + "/", university
+= link_to faculty.title, university_faculty_path(university.id, faculty.id)
+= simple_form_for ([university, faculty, faculty.documents.build]) do |f|
+  = f.input :title
+  = f.input :description
+  = f.button :button, :OK, class: 'btn-primary'
+br
 = render 'documents/documents', documents: faculty.documents
