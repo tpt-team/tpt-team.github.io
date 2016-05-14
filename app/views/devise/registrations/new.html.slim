@@ -3,6 +3,7 @@ h2 Регистрация
   .col-sm-6.col-sm-offset-2
     .form-group
       = f.input :email
+      = f.association :university
       = f.input :password, autocomplete: "off"
       = f.input :password_confirmation, autocomplete: "off"
       = f.button :submit, 'Зарегистрироваться', class: "btn btn-primary"
