@@ -436,3 +436,55 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/sessions/new.html.erb within layouts/application (102.1ms)
   Rendered layouts/_messages.html.slim (0.1ms)
 Completed 200 OK in 174ms (Views: 131.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-14 14:24:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DocumentsController#index as HTML
+  Rendered documents/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_messages.html.slim (16.2ms)
+Completed 200 OK in 4647ms (Views: 4634.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-14 14:24:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (22.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (128.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 223ms (Views: 192.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-05-14 14:25:00 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aNa8SljhmJqpBXun1dyU7/zMvTKHkS68Do6TI9hz8jK0pbZ23QcobWnBayK0alRhpOakjs5I2aQZf0zU5lZ7Fw==", "user"=>{"email"=>"geekhub@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "geekhub@gmail.com"]]
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aNa8SljhmJqpBXun1dyU7/zMvTKHkS68Do6TI9hz8jK0pbZ23QcobWnBayK0alRhpOakjs5I2aQZf0zU5lZ7Fw==", "user"=>{"email"=>"geekhub@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (10.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (107.0ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+Completed 200 OK in 503ms (Views: 211.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-14 14:25:02 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (49.0ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 148ms (Views: 145.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-14 14:25:04 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.5ms)
+  Rendered layouts/_messages.html.slim (0.2ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-14 14:25:10 +0300
+Processing by DocumentsController#index as HTML
+  Rendered documents/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
