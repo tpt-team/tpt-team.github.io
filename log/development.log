@@ -48,3 +48,92 @@ Migrating to DeviseCreateUsers (20160514103339)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-14 13:41:52 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/yaroslav/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 26ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-14 13:41:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (22.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (416.2ms)
+Completed 200 OK in 3044ms (Views: 3009.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/persons.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-14 13:42:01 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-14 13:42:01 +0300
+
+
+Started GET "/assets/persons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-14 13:42:01 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-14 13:42:01 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-14 13:42:18 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-05-14 13:42:34 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7uUW0n/tkyZ+W/mWlIQ/M/9zVWaiKr4C7qDoxHItL1wIb8t9riQVyI+rOiztdwzpw9jXSghBfRcE0i/8ZoCJxA==", "user"=>{"email"=>"qwerty@qwerty.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'qwerty@qwerty.ru' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (8.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 586ms (Views: 38.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-05-14 13:42:52 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YYupRPoci0pxyp9k9wIW0gxDHH8et7PUwv0Dg4ZwsLaHAXTrK9UNpIA6XN6O8SUIMOieU7TccMEoj8S7kt0WLg==", "user"=>{"email"=>"qwerty@qwerty.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'qwerty@qwerty.ru' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "qwerty@qwerty.ru"], ["encrypted_password", "$2a$11$/8Bdg.3xu/vFO2FoL0ZUJuTaREetFgp5cPtm0C5th0XUxBFmoAP9y"], ["created_at", "2016-05-14 10:42:53.077420"], ["updated_at", "2016-05-14 10:42:53.077420"], ["confirmation_token", "A4QfyRtLc2cxGx3bsxs7"], ["confirmation_sent_at", "2016-05-14 10:42:53.077916"]]
+  [1m[35m (180.5ms)[0m  commit transaction
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.4ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 247.2ms
+
+Sent mail to qwerty@qwerty.ru (15.7ms)
+Date: Sat, 14 May 2016 13:42:53 +0300
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: qwerty@qwerty.ru
+Message-ID: <5737012d8afd0_224b2ae690b170a095661@yaroslav-acer.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome qwerty@qwerty.ru!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=A4QfyRtLc2cxGx3bsxs7">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 731ms (ActiveRecord: 182.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-14 13:42:53 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/yaroslav/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/persons/profile" for 127.0.0.1 at 2016-05-14 13:43:21 +0300
+Processing by PersonsController#profile as HTML
+  Rendered persons/profile.html.slim within layouts/application (45.5ms)
+Completed 200 OK in 87ms (Views: 79.5ms | ActiveRecord: 0.0ms)
