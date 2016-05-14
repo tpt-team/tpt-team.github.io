@@ -4,10 +4,11 @@ nav.navbar.navbar-default role="navigation"
       li
       = link_to "Docbase", root_path, class: "navbar-brand"
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
-    ul.nav.navbar-nav.navbar-right  
-      li
-        = link_to ' ' do
-          span.glyphicon.glyphicon-copyright-mark
-            = current_user.user_points
+    ul.nav.navbar-nav.navbar-right
+      - if user_signed_in?
+        li
+          = link_to ' ' do
+            span.glyphicon.glyphicon-copyright-mark
+              = current_user.user_points
       li
         = render 'layouts/dropdown_menu'
