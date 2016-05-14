@@ -21765,3 +21765,52 @@ Processing by FacultiesController#show as HTML
   Rendered layouts/_header.html.slim (1.2ms)
   Rendered layouts/_messages.html.slim (0.1ms)
 Completed 200 OK in 166ms (Views: 164.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-14 20:49:05 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UniversitiesController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT  "universities".* FROM "universities" LIMIT 8 OFFSET 0
+  Rendered universities/_university.html.slim (303.9ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+  Rendered universities/_universities.html.slim (354.5ms)
+  Rendered universities/index.html.slim within layouts/application (398.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered layouts/_dropdown_menu.html.slim (89.6ms)
+  Rendered layouts/_header.html.slim (95.3ms)
+  Rendered layouts/_messages.html.slim (7.3ms)
+Completed 200 OK in 3852ms (Views: 3821.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-4d0499150e63a95d93efe5fef558b3278a67d5a2a07985cbe30c5d6b74c89a64.css?body=1" for 127.0.0.1 at 2016-05-14 20:49:09 +0300
+
+
+Started GET "/universities/1" for 127.0.0.1 at 2016-05-14 20:49:13 +0300
+Processing by UniversitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1 OFFSET 0[0m  [["id", 1]]
+  [1m[35mFaculty Load (0.3ms)[0m  SELECT "faculties".* FROM "faculties" WHERE "faculties"."university_id" = ?  [["university_id", 1]]
+  Rendered faculties/_faculty.html.slim (10.3ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "faculties" WHERE "faculties"."university_id" = ?[0m  [["university_id", 1]]
+  Rendered faculties/_faculties.html.slim (44.4ms)
+  Rendered universities/show.html.slim within layouts/application (96.5ms)
+  Rendered layouts/_dropdown_menu.html.slim (6.3ms)
+  Rendered layouts/_header.html.slim (11.5ms)
+  Rendered layouts/_messages.html.slim (4.0ms)
+Completed 200 OK in 266ms (Views: 263.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/universities/1/faculties/1" for 127.0.0.1 at 2016-05-14 20:49:15 +0300
+Processing by FacultiesController#show as HTML
+  Parameters: {"university_id"=>"1", "id"=>"1"}
+  [1m[35mFaculty Load (0.3ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDocument Load (0.4ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ? LIMIT 8 OFFSET 0  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_document.html.slim (10.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ?[0m  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_documents.html.slim (24.8ms)
+  Rendered faculties/show.html.slim within layouts/application (270.5ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.6ms)
+  Rendered layouts/_header.html.slim (1.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 436ms (Views: 433.5ms | ActiveRecord: 1.9ms)

@@ -1,5 +1,5 @@
 .col-sm-2
   .thumbnail
-    = link_to image_tag("folder.png", :border=>0), university_faculty_path(faculty.id, university.id)
+    = link_to image_tag("folder.png", :border=>0), university_faculty_path(university.id, faculty.id)
     .caption
       h4.text-center = faculty.title

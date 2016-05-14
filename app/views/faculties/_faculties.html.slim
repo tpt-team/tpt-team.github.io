@@ -1,3 +1,5 @@
+= link_to "Университеты/", root_path
+= link_to university.title, university
 - university.faculties.each_slice(4) do |group|
   .row
     = render partial: 'faculties/faculty', collection: group
