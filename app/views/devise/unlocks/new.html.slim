@@ -1,0 +1,8 @@
+h2 Повторная инструкция
+= simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
+  .col-sm-6.col-sm-offset-2
+    .field
+      = f.input :email, autofocus: true
+    .actions
+      = f.button :submit, 'Отправить инструкцию', class: "btn btn-primary"
+    = render "devise/shared/links"
