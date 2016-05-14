@@ -489,6 +489,7 @@ Processing by DocumentsController#index as HTML
   Rendered layouts/_messages.html.slim (0.1ms)
 Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+<<<<<<< HEAD
 Migrating to DeviseCreateAdminUsers (20160514113547)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.5ms)[0m  [1mCREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
@@ -580,12 +581,22 @@ DEPRECATION WARNING: `#timestamps` was called without specifying an option for `
             WHERE name='index_admin_users_on_email' AND type='index'
 [0m
   [1m[35m (0.3ms)[0m              SELECT sql
+=======
+Migrating to AddUniversityIdToUsers (20160514114011)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "university_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160514114011"]]
+  [1m[36m (151.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+>>>>>>> 17fcfaf6531a59d1d3242e52accecfd568d4a227
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
+<<<<<<< HEAD
 
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
             FROM sqlite_master
@@ -986,12 +997,17 @@ ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
             WHERE name='index_users_on_reset_password_token' AND type='index'
 
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
+=======
+[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+>>>>>>> 17fcfaf6531a59d1d3242e52accecfd568d4a227
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
+<<<<<<< HEAD
 [0m
 
 
@@ -1192,3 +1208,6 @@ Processing by Admin::DashboardController#index as HTML
   [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/page/index.html.arb (156.5ms)
 Completed 200 OK in 167ms (Views: 163.4ms | ActiveRecord: 0.3ms)
+=======
+
+>>>>>>> 17fcfaf6531a59d1d3242e52accecfd568d4a227
