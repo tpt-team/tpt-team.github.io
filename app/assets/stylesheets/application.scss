@@ -3,6 +3,11 @@
 @import "form";
 @import "navbar";
 
+  .thumbnail {
+    border: 0 none;
+    box-shadow: none;
+  }
+
  .alert-error {
       background-color: #f2dede;
       border-color: #eed3d7;

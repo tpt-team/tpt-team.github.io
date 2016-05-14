@@ -1,5 +1,5 @@
-.col-sm-1
+.col-sm-2
   .thumbnail
     = link_to image_tag("doc.png", :border=>0), university_faculty_document_path(document.id, faculty.id, params[:university_id]), remote: true
     .caption
-      h4 = document.title
+      h4.text-center = document.title
