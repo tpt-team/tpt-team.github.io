@@ -1,11 +1,13 @@
-h2 Регистрация
-= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-  .col-sm-6.col-sm-offset-2
-    .form-group
-      = f.input :email
-      = f.association :university
-      = f.input :password, autocomplete: "off"
-      = f.input :password_confirmation, autocomplete: "off"
-      = f.button :submit, 'Зарегистрироваться', class: "btn btn-primary"
-    .form-group
-      = render "devise/shared/links"
+section#form
+  .container
+    .row
+      .col-xs-12
+        .form-wrap
+          h1 Регистрация
+          = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+            = f.input :email, autofocus: true , label: false, class: "form-control", placeholder: "somebody@example.com"
+            = f.association :university, label: false, prompt: "Выберите университет"
+            = f.input :password, autocomplete: "off", label: false, class: "form-control",  placeholder: "Пароль"
+            = f.input :password_confirmation, autocomplete: "off", label: false, class: "form-control",  placeholder: "Повторите пароль"
+            = f.button :submit, 'Зарегистрироваться', class: "btn-custom btn-block"
+            = render "devise/shared/links"
