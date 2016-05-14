@@ -1,6 +1,13 @@
 nav.navbar.navbar-default role="navigation"
   .navbar-header
-    = link_to "Docbase", root_path, class: "navbar-brand"
+    ul.nav.navbar-nav
+      li
+      = link_to "Docbase", root_path, class: "navbar-brand"
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
-    ul.nav.navbar-nav.navbar-right
-      = render 'layouts/dropdown_menu'
+    ul.nav.navbar-nav.navbar-right  
+      li
+        = link_to ' ' do
+          span.glyphicon.glyphicon-copyright-mark
+            = current_user.user_points
+      li
+        = render 'layouts/dropdown_menu'
