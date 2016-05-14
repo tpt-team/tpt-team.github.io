@@ -14,6 +14,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-growl-rails'
 gem 'slim-rails'
 gem 'devise'
+gem 'activeadmin', github: 'activeadmin'
+
 
 group :development, :test do
   gem 'byebug'
