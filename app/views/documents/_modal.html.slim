@@ -14,6 +14,7 @@
           .col-sm-7.col-sm-offset-4
             h4 Description:
             = document.description
+            = link_to "Download", document.document.url(:original, false)
             .row
               .col-sm-6
                 h4 Size:
