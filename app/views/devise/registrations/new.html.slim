@@ -1,0 +1,11 @@
+h2 Регистрация
+= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  .col-sm-6.col-sm-offset-2
+    .form-group
+      = f.input :email
+      = f.association :university
+      = f.input :password, autocomplete: "off"
+      = f.input :password_confirmation, autocomplete: "off"
+      = f.button :submit, 'Зарегистрироваться', class: "btn btn-primary"
+    .form-group
+      = render "devise/shared/links"

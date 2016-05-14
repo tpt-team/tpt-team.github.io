@@ -1,0 +1,8 @@
+h2 Забыли пароль?
+= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+  .col-sm-6.col-sm-offset-2
+    .form-group
+      = f.input :email, autofocus: true
+      = f.button :submit, 'Отправить инструкцию', class: "btn btn-primary"
+    .form-group
+      = render "devise/shared/links"

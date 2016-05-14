@@ -1,0 +1,8 @@
+h2 Отправить инструкцию подтверждения
+= simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+  .col-sm-6.col-sm-offset-2
+    .field
+      = f.input :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email)
+    .actions
+      = f.button :submit, 'Отправить инструкцию', class: "btn btn-primary"
+    = render "devise/shared/links"
