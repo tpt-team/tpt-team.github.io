@@ -1,15 +1,17 @@
-h2 Редактировать
-= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-  .col-sm-6.col-sm-offset-2
-    .form-group
-      = f.input :email
-      - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-        div
-          | В настоящее время ожидается подтверждение для: #{resource.unconfirmed_email}
-      = f.input :current_password, autocomplete: "off"
-      = f.input :password, autocomplete: "off"
-      = f.input :password_confirmation, autocomplete: "off"
-      .form-group
-        = f.button :submit, 'Обновить', class: "btn btn-primary"
-        = link_to 'Удалить', registration_path(resource_name), data: { confirm: "Вы уверены?" }, method: :delete, class: "btn btn-primary"
-  = link_to "Назад", :back
+section#form
+  .container
+    .row
+      .col-xs-12
+        .form-wrap
+          h1 Редактировать
+          = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+                = f.input :email, label: false,  placeholder: "somebody@example.com"
+                - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+                  div
+                    | В настоящее время ожидается подтверждение для: #{resource.unconfirmed_email}
+                = f.input :current_password, autocomplete: "off", label: false,  placeholder: "Поточный пароль"
+                = f.input :password, autocomplete: "off", label: false,  placeholder: "Новый пароль"
+                = f.input :password_confirmation, autocomplete: "off", label: false,  placeholder: "Повторите пароль"
+                = f.button :submit, 'Обновить', class: "btn-custom btn-block"
+                = link_to 'Удалить', registration_path(resource_name), data: { confirm: "Вы уверены?" }, method: :delete, class: " btn btn-custom btn-block"
+          = link_to "Назад", :back
