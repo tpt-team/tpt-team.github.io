@@ -1,0 +1,4 @@
+- documents.each_slice(4) do |group|
+  .row
+    = render partial: 'document', collection: group
+= paginate documents
