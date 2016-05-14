@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "cocaine"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'decent_exposure'
 gem 'rails', '4.2.5.1'
 gem 'sqlite3'

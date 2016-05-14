@@ -9,7 +9,7 @@ class DocumentsController < ApplicationController
       document.update_attributes(faculty_id: faculty.id, user_id: current_user.id)
       redirect_to university_faculty_path(params[:university_id], faculty)
     else
-      render :new
+      redirect_to university_faculty_path(params[:university_id], faculty)
     end
   end
 

@@ -7,6 +7,7 @@
 = simple_form_for ([university, faculty, faculty.documents.build]) do |f|
   = f.input :title
   = f.input :description
+  = f.file_field :document
   = f.button :button, :OK, class: 'btn-primary'
 br
 = render 'documents/documents', documents: faculty.documents
