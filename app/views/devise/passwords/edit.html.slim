@@ -1,0 +1,10 @@
+h2 Сменить пароль
+= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
+ = f.input :reset_password_token, as: :hidden
+ .col-sm-6.col-sm-offset-2
+   .form-group
+     = f.input :password, autocomplete: "off"
+     = f.input :password_confirmation, autocomplete: "off"
+     = f.button :submit, 'Сменить пароль', class: "btn btn-primary"
+   .form-group
+      = render "devise/shared/links"

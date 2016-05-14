@@ -1,0 +1,9 @@
+h2 Войти
+= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f|
+  .col-sm-6.col-sm-offset-2
+    = f.input :email, autofocus: true , class: "form-control"
+    = f.input :password, autocomplete: "off", class: "form-control"
+    = f.input :remember_me, as: :boolean, inline_label: true if devise_mapping.rememberable?
+    = f.button :submit, 'Войти', class: "btn btn-primary"
+  .col-sm-6.col-sm-offset-2
+    = render "devise/shared/links"
