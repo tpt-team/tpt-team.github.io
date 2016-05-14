@@ -14707,3 +14707,228 @@ Processing by DocumentsController#index as HTML
   Rendered layouts/_header.html.slim (1.5ms)
   Rendered layouts/_messages.html.slim (0.1ms)
 Completed 200 OK in 187ms (Views: 185.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-14 18:26:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DocumentsController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" LIMIT 8 OFFSET 0
+  Rendered documents/_document.html.slim (257.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "documents"[0m
+  Rendered documents/_documents.html.slim (284.0ms)
+  Rendered documents/index.html.slim within layouts/application (312.0ms)
+  Rendered layouts/_dropdown_menu.html.slim (10.8ms)
+  Rendered layouts/_header.html.slim (16.7ms)
+  Rendered layouts/_messages.html.slim (4.3ms)
+Completed 200 OK in 1202ms (Views: 1187.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-500157752dee2ffd7e9d6acfc7df67366506c3b41e56533e822b948476f03756.css?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-dc92ae60a047f8753fec580d6ff92df79e4315e155da987b4f9afbd626e07d20.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-e33243c5ee22a67beb226ebbd3c9da65f1aaa5d5f796aec539c38b80ebb00583.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/initializers/filters.self-6808d670791ae5166fb47face6cc6a60b047a031f8d1a7a0402647707ab73542.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:53 +0300
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-18eef5f4f4457e27d25b74bc121ddcf21b67c66f550a075a1f0e2b4c02eb1238.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:54 +0300
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:54 +0300
+
+
+Started GET "/assets/documents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:54 +0300
+
+
+Started GET "/assets/persons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:54 +0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-14 18:26:54 +0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-05-14 18:26:54 +0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-14 18:26:55 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT "universities".* FROM "universities"
+  Rendered devise/shared/_links.html.slim (16.9ms)
+  Rendered devise/registrations/new.html.slim within layouts/application (76.9ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.5ms)
+  Rendered layouts/_header.html.slim (1.4ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 262ms (Views: 242.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-14 18:26:56 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (12.2ms)
+  Rendered devise/sessions/new.html.slim within layouts/application (37.5ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.7ms)
+  Rendered layouts/_header.html.slim (1.8ms)
+  Rendered layouts/_messages.html.slim (0.3ms)
+Completed 200 OK in 214ms (Views: 211.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2016-05-14 18:26:57 +0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.slim (13.1ms)
+  Rendered devise/passwords/new.html.slim within layouts/application (32.4ms)
+  Rendered layouts/_dropdown_menu.html.slim (6.2ms)
+  Rendered layouts/_header.html.slim (11.4ms)
+  Rendered layouts/_messages.html.slim (4.3ms)
+Completed 200 OK in 217ms (Views: 215.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2016-05-14 18:26:58 +0300
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendered devise/shared/_links.html.slim (7.2ms)
+  Rendered devise/confirmations/new.html.slim within layouts/application (24.4ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.5ms)
+  Rendered layouts/_header.html.slim (1.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 191ms (Views: 190.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2016-05-14 18:26:59 +0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.slim (10.1ms)
+  Rendered devise/passwords/new.html.slim within layouts/application (19.3ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.5ms)
+  Rendered layouts/_header.html.slim (1.6ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 204ms (Views: 203.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-14 18:27:04 +0300
+Processing by DocumentsController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" LIMIT 8 OFFSET 0[0m
+  Rendered documents/_document.html.slim (23.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "documents"
+  Rendered documents/_documents.html.slim (38.4ms)
+  Rendered documents/index.html.slim within layouts/application (44.3ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.6ms)
+  Rendered layouts/_header.html.slim (1.5ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 199ms (Views: 197.8ms | ActiveRecord: 0.4ms)
