@@ -1,23 +1,22 @@
 .modal.fade tabindex="-1" role = "dialog"
   .modal-dialog role="document"
     .modal-content
-      .modal-header
+      .modal-header-info
         button.close type="button" data-dismiss="modal" aria-label="Close"
           | &times
         h3.modal-title = document.title
         p.text-muted
-          = "category"
-      .modal-body
+          = User.find(document.user_id).email
+      .modal-body-info
         .row
-          .col-sm-1
+          .col-sm-3
             = image_tag("doc.png", class:"picbox")
-          .col-sm-7.col-sm-offset-4
-            h4 Description:
+          .col-sm-8.col-sm-offset-1
+            h4 Описание:
             = document.description
-            = link_to "Download", document.document.url(:original, false)
-            .row
-              .col-sm-6
-                h4 Size:
-              .col-sm-6
-                h5 size
             .modal-footer
+              .row
+                .col-sm-8
+                  = "Размер файла: #{document.document_file_size / 1024} Kb"
+                .col-sm-3
+                  = link_to "Download", document.document.url(:original, false), class: 'btn btn-custom'

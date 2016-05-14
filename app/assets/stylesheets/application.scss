@@ -37,8 +37,8 @@
    }
 
   .picbox{
-    height:1300%;
-    width: 1300%;
+    height: 150px;
+    width: 150px;
   }
 
   .page-header h1{
@@ -48,3 +48,26 @@
     font-weight: bold;
     padding-bottom: 20px;
   }
+
+  .modal-header-info {
+     color: #ffffff;
+     padding:9px 15px;
+     background-color: #1fa67b;
+     border:1px solid #1fa67b;
+     -webkit-border-top-left-radius: 5px;
+     -webkit-border-top-right-radius: 5px;
+     -moz-border-radius-topleft: 5px;
+     -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+   }
+   .modal-body-info {
+     padding:30px 15px;
+     border:1px solid black;
+     -webkit-border-bottom-left-radius: 5px;
+     -webkit-border-bottom-right-radius: 5px;
+     -moz-border-radius-bottomleft: 5px;
+     -moz-border-radius-bottomright: 5px;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+   }
