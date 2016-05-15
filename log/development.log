@@ -489,7 +489,6 @@ Processing by DocumentsController#index as HTML
   Rendered layouts/_messages.html.slim (0.1ms)
 Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-<<<<<<< HEAD
 Migrating to DeviseCreateAdminUsers (20160514113547)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.5ms)[0m  [1mCREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
@@ -581,7 +580,6 @@ DEPRECATION WARNING: `#timestamps` was called without specifying an option for `
             WHERE name='index_admin_users_on_email' AND type='index'
 [0m
   [1m[35m (0.3ms)[0m              SELECT sql
-=======
 Migrating to AddUniversityIdToUsers (20160514114011)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "university_id" integer[0m
@@ -589,15 +587,12 @@ Migrating to AddUniversityIdToUsers (20160514114011)
   [1m[36m (151.3ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.4ms)[0m  [1m            SELECT sql
->>>>>>> 17fcfaf6531a59d1d3242e52accecfd568d4a227
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
-<<<<<<< HEAD
-
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
@@ -997,17 +992,14 @@ ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
             WHERE name='index_users_on_reset_password_token' AND type='index'
 
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
-=======
 [0m
   [1m[35m (0.4ms)[0m              SELECT sql
->>>>>>> 17fcfaf6531a59d1d3242e52accecfd568d4a227
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
-<<<<<<< HEAD
 [0m
 
 
@@ -1702,7 +1694,6 @@ Processing by Admin::DocumentsController#index as HTML
 Completed 200 OK in 197ms (Views: 192.6ms | ActiveRecord: 0.9ms)
 
 
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2016-05-14 15:21:29 +0300
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by DocumentsController#index as HTML
@@ -10004,8 +9995,6 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/sessions/new.html.slim within layouts/application (31.3ms)
   Rendered layouts/_messages.html.slim (0.1ms)
 Completed 200 OK in 215ms (Views: 213.0ms | ActiveRecord: 0.0ms)
->>>>>>> 4240edd468accc94f45901cb4b38121d09675c79
-<<<<<<< HEAD
 
 
 Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-14 16:39:32 +0300
@@ -10032,7 +10021,7 @@ ActionView::Template::Error (undefined local variable or method `f' for #<#<Clas
     34:         .col-sm-6.col-sm-offset-2
     35:         .form-group
     36:         = f.input :email, autofocus: true
-    37:         = f.button :submit, 'Отправить инструкцию', class: "btn btn-primary"  
+    37:         = f.button :submit, 'Отправить инструкцию', class: "btn btn-primary"
     38:         input#recovery-email.form-control autocomplete="off" name="recovery-email" type="email" /
     39:       .modal-footer
   app/views/devise/sessions/new.html.slim:36:in `_app_views_devise_sessions_new_html_slim__1447911986417035290_69864739298040'
@@ -10781,7 +10770,7 @@ SyntaxError (/home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:
 ... type="email" /), true, "\n  ", _temple_html_pretty1)))).to_...
 ...                               ^
 /home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:4: syntax error, unexpected ';', expecting ')'
-...temple_html_pretty1)))).to_s)); 
+...temple_html_pretty1)))).to_s));
 ...                               ^):
   app/views/devise/sessions/new.html.slim:4: syntax error, unexpected tIDENTIFIER, expecting =>
   app/views/devise/sessions/new.html.slim:4: syntax error, unexpected ')'
@@ -10819,7 +10808,7 @@ SyntaxError (/home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:
 ...dy@example.com"), true, "\n  ", _temple_html_pretty1)))).to_...
 ...                               ^
 /home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:4: syntax error, unexpected ';', expecting ')'
-...temple_html_pretty1)))).to_s)); 
+...temple_html_pretty1)))).to_s));
 ...                               ^):
   app/views/devise/sessions/new.html.slim:4: syntax error, unexpected ')', expecting =>
   app/views/devise/sessions/new.html.slim:4: Can't assign to true
@@ -10908,7 +10897,7 @@ SyntaxError (/home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:
 ...dy@example.com"), true, "\n  ", _temple_html_pretty1)))).to_...
 ...                               ^
 /home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:4: syntax error, unexpected ';', expecting ')'
-...temple_html_pretty1)))).to_s)); 
+...temple_html_pretty1)))).to_s));
 ...                               ^):
   app/views/devise/sessions/new.html.slim:4: syntax error, unexpected ')', expecting =>
   app/views/devise/sessions/new.html.slim:4: Can't assign to true
@@ -11257,7 +11246,7 @@ SyntaxError (/home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:
 ...nput :), false, "\n          ", _temple_html_pretty1)))).to_...
 ...                               ^
 /home/tupickiy/TPT/docbase/app/views/devise/sessions/new.html.slim:11: syntax error, unexpected ';', expecting ')'
-...temple_html_pretty1)))).to_s)); 
+...temple_html_pretty1)))).to_s));
 ...                               ^):
   app/views/devise/sessions/new.html.slim:11: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
   app/views/devise/sessions/new.html.slim:11: Can't assign to false
@@ -12128,7 +12117,7 @@ Processing by Devise::SessionsController#new as HTML
 Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
 
 SyntaxError (/home/tupickiy/TPT/docbase/app/views/devise/shared/_links.html.slim:1: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
-...ller_name != 'registrations' do; 
+...ller_name != 'registrations' do;
 ...                               ^
 /home/tupickiy/TPT/docbase/app/views/devise/shared/_links.html.slim:18: syntax error, unexpected keyword_ensure, expecting end-of-input):
   app/views/devise/shared/_links.html.slim:1: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
@@ -13898,7 +13887,7 @@ Completed 200 OK in 170ms (Views: 169.1ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:02:50 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (26.2ms)
   Rendered layouts/_dropdown_menu.html.slim (6.7ms)
@@ -13908,7 +13897,7 @@ Completed 200 OK in 212ms (Views: 209.7ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:03:02 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (18.4ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14158,7 +14147,7 @@ Completed 200 OK in 157ms (Views: 156.6ms | ActiveRecord: 0.1ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:08:30 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (19.4ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14178,7 +14167,7 @@ Completed 200 OK in 157ms (Views: 156.2ms | ActiveRecord: 0.1ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:08:44 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (17.3ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14188,7 +14177,7 @@ Completed 200 OK in 186ms (Views: 183.8ms | ActiveRecord: 0.1ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:09:12 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (6.0ms)
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms)
@@ -14220,7 +14209,7 @@ ActionView::Template::Error (Malformed indentation
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:09:19 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (33.6ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14230,7 +14219,7 @@ Completed 200 OK in 228ms (Views: 225.5ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:10:15 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (25.3ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14240,7 +14229,7 @@ Completed 200 OK in 218ms (Views: 212.9ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:10:30 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (28.2ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14250,7 +14239,7 @@ Completed 200 OK in 220ms (Views: 216.4ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:11:06 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (26.9ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14260,7 +14249,7 @@ Completed 200 OK in 197ms (Views: 194.5ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:11:09 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (19.6ms)
   Rendered layouts/_dropdown_menu.html.slim (0.7ms)
@@ -14270,7 +14259,7 @@ Completed 200 OK in 208ms (Views: 203.9ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:12:26 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (25.1ms)
   Rendered layouts/_dropdown_menu.html.slim (0.5ms)
@@ -14304,7 +14293,7 @@ Completed 200 OK in 161ms (Views: 160.2ms | ActiveRecord: 0.1ms)
 
 
 Started GET "/users/edit.3" for 127.0.0.1 at 2016-05-14 18:12:34 +0300
-Processing by Devise::RegistrationsController#edit as 
+Processing by Devise::RegistrationsController#edit as
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
   Rendered devise/registrations/edit.html.slim within layouts/application (16.9ms)
   Rendered layouts/_dropdown_menu.html.slim (0.4ms)
@@ -27629,7 +27618,7 @@ Did you mean?  fail):
      7: = simple_form_for ([university, faculty, faculty.documents.build]) do |f|
      8:   = f.input :title
      9:   = f.input :description
-    10:   = f.input :document, as: file 
+    10:   = f.input :document, as: file
     11:   = f.button :button, :OK, class: 'btn-primary'
     12: br
     13: = render 'documents/documents', documents: faculty.documents
@@ -27665,7 +27654,7 @@ Did you mean?  fail):
      7: = simple_form_for ([university, faculty, faculty.documents.build]) do |f|
      8:   = f.input :title
      9:   = f.input :description
-    10:   = f.input :document, as: file 
+    10:   = f.input :document, as: file
     11:   = f.button :button, :OK, class: 'btn-primary'
     12: br
     13: = render 'documents/documents', documents: faculty.documents
@@ -29408,7 +29397,7 @@ Completed 200 OK in 245ms (Views: 232.4ms | ActiveRecord: 2.1ms)
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
 Migrating to AddDocumentstringToDocuments (20160514194203)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "adocuments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "points" integer, "confirmed" boolean, "category_id" integer, "user_id" integer, "university_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "faculty_id" integer, "document_file_name" varchar, "document_content_type" varchar, "document_file_size" integer, "document_updated_at" datetime, "document" varchar) 
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "adocuments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "points" integer, "confirmed" boolean, "category_id" integer, "user_id" integer, "university_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "faculty_id" integer, "document_file_name" varchar, "document_content_type" varchar, "document_file_size" integer, "document_updated_at" datetime, "document" varchar)
   [1m[36m (0.2ms)[0m  [1mSELECT * FROM "documents"[0m
   [1m[35m (0.1ms)[0m  INSERT INTO "adocuments" ("id","title","description","points","confirmed","category_id","user_id","university_id","created_at","updated_at","faculty_id","document_file_name","document_content_type","document_file_size","document_updated_at","document") VALUES (1, 'first', '414124', 5, 'f', 1, NULL, NULL, '2016-05-14 11:51:38.876735', '2016-05-14 12:27:19.640388', NULL, NULL, NULL, NULL, NULL, NULL)
   [1m[36m (0.1ms)[0m  [1mINSERT INTO "adocuments" ("id","title","description","points","confirmed","category_id","user_id","university_id","created_at","updated_at","faculty_id","document_file_name","document_content_type","document_file_size","document_updated_at","document") VALUES (2, 'second', 'gjkhgkj', 1, 't', 2, NULL, NULL, '2016-05-14 12:27:39.510315', '2016-05-14 12:27:39.510315', NULL, NULL, NULL, NULL, NULL, NULL)[0m
@@ -34400,10 +34389,10 @@ ActionView::Template::Error (Unknown line indicator
     ^
 ):
     16:             = document.description
-    17:             a href="/musics/document_download/" 
+    17:             a href="/musics/document_download/"
     18:             = document.id
     19:             ", style="text-decoration:none"&gt;#{document.document_file_name}
-    20: 
+    20:
     21:             .row
     22:               .col-sm-6
   app/views/documents/_modal.html.slim:19
@@ -34428,10 +34417,10 @@ ActionView::Template::Error (Unknown line indicator
     ^
 ):
     16:             = document.description
-    17:             a href="/musics/document_download/" 
+    17:             a href="/musics/document_download/"
     18:             = document.id
     19:             ", style="text-decoration:none"&gt;#{document.document_file_name}
-    20: 
+    20:
     21:             .row
     22:               .col-sm-6
   app/views/documents/_modal.html.slim:19
@@ -38529,7 +38518,6 @@ Processing by DocumentsController#show as JS
 Completed 200 OK in 176ms (Views: 175.3ms | ActiveRecord: 0.2ms)
 
 
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2016-05-15 03:29:39 +0300
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by UniversitiesController#index as HTML
@@ -43155,7 +43143,7 @@ Processing by DocumentsController#download as HTML
   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "user_points" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["user_points", 287], ["updated_at", "2016-05-15 00:55:34.351500"], ["id", 4]]
   [1m[35m (145.8ms)[0m  commit transaction
 Redirected to http://localhost:3000/system/documents/documents/17/original/name.doc
-Redirected to 
+Redirected to
 Completed 500 Internal Server Error in 162ms (ActiveRecord: 147.1ms)
 
 AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
@@ -51323,4 +51311,462 @@ Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-05-15 04:51:33 +0300
->>>>>>> 0e316388106ed56feaf165d09803f1d2c5651b8e
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-15 05:22:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UniversitiesController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT  "universities".* FROM "universities" LIMIT 12 OFFSET 0
+  Rendered universities/_university.html.slim (304.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+  Rendered universities/_universities.html.slim (333.3ms)
+  Rendered universities/index.html.slim within layouts/application (371.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_dropdown_menu.html.slim (8.0ms)
+  Rendered layouts/_header.html.slim (232.5ms)
+  Rendered layouts/_messages.html.slim (4.6ms)
+Completed 200 OK in 3409ms (Views: 3377.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/universities/1" for 127.0.0.1 at 2016-05-15 05:22:38 +0300
+Processing by UniversitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1 OFFSET 0[0m  [["id", 1]]
+  [1m[35mFaculty Load (0.3ms)[0m  SELECT "faculties".* FROM "faculties" WHERE "faculties"."university_id" = ?  [["university_id", 1]]
+  Rendered faculties/_faculty.html.slim (9.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "faculties" WHERE "faculties"."university_id" = ?[0m  [["university_id", 1]]
+  Rendered faculties/_faculties.html.slim (51.8ms)
+  Rendered universities/show.html.slim within layouts/application (231.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_dropdown_menu.html.slim (6.3ms)
+  Rendered layouts/_header.html.slim (14.1ms)
+  Rendered layouts/_messages.html.slim (4.8ms)
+Completed 200 OK in 434ms (Views: 431.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/universities/1/faculties/1" for 127.0.0.1 at 2016-05-15 05:22:40 +0300
+Processing by FacultiesController#show as HTML
+  Parameters: {"university_id"=>"1", "id"=>"1"}
+  [1m[36mFaculty Load (0.2ms)[0m  [1mSELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_modaldoc.html.slim (131.1ms)
+  [1m[35mDocument Load (0.6ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ? LIMIT 12 OFFSET 0  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_document.html.slim (17.8ms)
+  Rendered documents/_document.html.slim (3.9ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ?[0m  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_documents.html.slim (45.5ms)
+  Rendered faculties/show.html.slim within layouts/application (212.3ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.5ms)
+  Rendered layouts/_header.html.slim (1.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 378ms (Views: 375.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/universities/1/faculties/1/documents/19" for 127.0.0.1 at 2016-05-15 05:22:45 +0300
+Processing by DocumentsController#show as JS
+  Parameters: {"university_id"=>"1", "faculty_id"=>"1", "id"=>"19"}
+  [1m[35mDocument Load (0.4ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFaculty Load (0.1ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered documents/_modal.html.slim (19.4ms)
+  Rendered documents/show.js.coffee (1600.2ms)
+Completed 200 OK in 1614ms (Views: 1612.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/universities/1/faculties/1/documents/10" for 127.0.0.1 at 2016-05-15 05:23:11 +0300
+Processing by DocumentsController#show as JS
+  Parameters: {"university_id"=>"1", "faculty_id"=>"1", "id"=>"10"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered documents/_modal.html.slim (31.1ms)
+  Rendered documents/show.js.coffee (35.2ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `/' for nil:NilClass):
+    17:             .modal-footer
+    18:               .row
+    19:                 .col-sm-8
+    20:                   = "Размер файла: #{document.document_file_size / 1024} Kb"
+    21:                 .col-sm-3
+    22:                   - if current_user.user_points >= document.points
+    23:                       = link_to "Скачать(#{document.points} б.)", download_university_faculty_document_path(university.id, faculty.id, document), method: :get, class: 'btn btn-custom', id: "points_#{document.points}"
+  app/views/documents/_modal.html.slim:20:in `_app_views_documents__modal_html_slim___560871436773403921_70321654764280'
+  app/views/documents/show.js.coffee:1:in `_app_views_documents_show_js_coffee__2757069946268543714_70321533129220'
+
+
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (28.2ms)
+
+
+Started POST "/universities/1/faculties/1/documents" for 127.0.0.1 at 2016-05-15 05:23:58 +0300
+Processing by DocumentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"98tT5gD2hkOudvpAafI8sQeU/QFT5uWwM9dN3AOgZ0CttRPGlqCYz0hYF8DBQgDFPbmjmxkPw0nv5PfjoZhmkQ==", "document"=>{"title"=>"2qqdwdqwd", "description"=>"qwdqw d qwd", "document"=>#<ActionDispatch::Http::UploadedFile:0x007fea11e95bd0 @tempfile=#<Tempfile:/tmp/RackMultipart20160515-4312-da3dkm.doc>, @original_filename="Laboratorna_Robota_3.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"document[document]\"; filename=\"Laboratorna_Robota_3.doc\"\r\nContent-Type: application/msword\r\n">}, "button"=>"", "university_id"=>"1", "faculty_id"=>"1"}
+Command :: file -b --mime '/tmp/96baed243feb1b401bdd4a5b94b9f3d920160515-4312-175rw5z.doc'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/tmp/96baed243feb1b401bdd4a5b94b9f3d920160515-4312-amoqnk.doc'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "documents" ("title", "description", "document_file_name", "document_content_type", "document_file_size", "document_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "2qqdwdqwd"], ["description", "qwdqw d qwd"], ["document_file_name", "Laboratorna_Robota_3.doc"], ["document_content_type", "application/msword"], ["document_file_size", 801280], ["document_updated_at", "2016-05-15 02:23:58.718570"], ["created_at", "2016-05-15 02:23:59.164740"], ["updated_at", "2016-05-15 02:23:59.164740"]]
+  [1m[36m (199.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mFaculty Load (0.1ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "documents" SET "faculty_id" = ?, "user_id" = ?, "updated_at" = ? WHERE "documents"."id" = ?[0m  [["faculty_id", 1], ["user_id", 3], ["updated_at", "2016-05-15 02:23:59.447556"], ["id", 20]]
+  [1m[35m (206.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/universities/1/faculties/1
+Completed 302 Found in 944ms (ActiveRecord: 406.5ms)
+
+
+Started GET "/universities/1/faculties/1" for 127.0.0.1 at 2016-05-15 05:23:59 +0300
+Processing by FacultiesController#show as HTML
+  Parameters: {"university_id"=>"1", "id"=>"1"}
+  [1m[36mFaculty Load (0.2ms)[0m  [1mSELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_modaldoc.html.slim (28.7ms)
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ? LIMIT 12 OFFSET 0  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_document.html.slim (20.5ms)
+  Rendered documents/_document.html.slim (4.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ?[0m  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_documents.html.slim (37.5ms)
+  Rendered faculties/show.html.slim within layouts/application (85.7ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.6ms)
+  Rendered layouts/_header.html.slim (1.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 258ms (Views: 255.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-05-15 05:24:06 +0300
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-05-15 05:24:06 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/shared/_links.erb (7.8ms)
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (299.0ms)
+Completed 200 OK in 590ms (Views: 554.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2016-05-15 05:24:16 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uYbW177Owbxg6IEHHR59JT5VXwqE4KuSSHbSrZEkNGwmFt7yK0lihetT4S0xEWArtQL5mD6pFeVEmF1FHyRAA==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1  [["email", "admin@example.com"]]
+Completed 401 Unauthorized in 415ms (ActiveRecord: 0.3ms)
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uYbW177Owbxg6IEHHR59JT5VXwqE4KuSSHbSrZEkNGwmFt7yK0lihetT4S0xEWArtQL5mD6pFeVEmF1FHyRAA==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/shared/_links.erb (3.6ms)
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (42.5ms)
+Completed 200 OK in 390ms (Views: 166.8ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAdminUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-05-15 05:25:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/shared/_links.erb (8.8ms)
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (75.8ms)
+Completed 200 OK in 774ms (Views: 740.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2016-05-15 05:25:10 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PwThkc6Q5ZW/JEe1BrtGF8rh7ufqAJj7yHdN2oArdOZleqGxWMb7GVkKqjWuC3pj8MywfaDpvgIURPflIhN1Nw==", "admin_user"=>{"email"=>"geekhub@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1  [["email", "geekhub@gmail.com"]]
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.4ms)
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PwThkc6Q5ZW/JEe1BrtGF8rh7ufqAJj7yHdN2oArdOZleqGxWMb7GVkKqjWuC3pj8MywfaDpvgIURPflIhN1Nw==", "admin_user"=>{"email"=>"geekhub@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/shared/_links.erb (4.3ms)
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (101.8ms)
+Completed 200 OK in 490ms (Views: 242.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2016-05-15 05:25:16 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ljzCxaUyF9hbSRhzWgn0z6NVZf29mP174sF4A+plFvrMQoLlM2QJVL1n9fPyuci7mXg7Z/dx24I+8sI8SF0XKw==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mAdminUser Load (2.9ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["email", "admin@example.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "admin_users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["last_sign_in_at", "2016-05-14 12:07:47.801187"], ["current_sign_in_at", "2016-05-15 02:25:17.139053"], ["sign_in_count", 3], ["updated_at", "2016-05-15 02:25:17.140265"], ["id", 1]]
+  [1m[35m (164.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 437ms (ActiveRecord: 168.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-05-15 05:25:17 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/page/index.html.arb (138.8ms)
+Completed 200 OK in 185ms (Views: 160.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/universities" for 127.0.0.1 at 2016-05-15 05:25:20 +0300
+Processing by Admin::UniversitiesController#index as HTML
+  [1m[35mAdminUser Load (0.1ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "universities" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "universities" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "universities" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  "universities".* FROM "universities"  ORDER BY "universities"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mFaculty Load (0.2ms)[0m  SELECT "faculties".* FROM "faculties"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/index.html.arb (273.3ms)
+Completed 200 OK in 331ms (Views: 302.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/documents" for 127.0.0.1 at 2016-05-15 05:25:27 +0300
+Processing by Admin::DocumentsController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "documents"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT  "documents".* FROM "documents"  ORDER BY "documents"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mFaculty Load (0.2ms)[0m  [1mSELECT "faculties".* FROM "faculties"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/index.html.arb (378.9ms)
+Completed 200 OK in 396ms (Views: 383.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/documents?order=confirmed_desc" for 127.0.0.1 at 2016-05-15 05:25:29 +0300
+Processing by Admin::DocumentsController#index as HTML
+  Parameters: {"order"=>"confirmed_desc"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "documents"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mDocument Load (0.5ms)[0m  SELECT  "documents".* FROM "documents"  ORDER BY "documents"."confirmed" desc LIMIT 30 OFFSET 0
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mFaculty Load (0.2ms)[0m  SELECT "faculties".* FROM "faculties"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/index.html.arb (342.0ms)
+Completed 200 OK in 349ms (Views: 344.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/documents?order=confirmed_asc" for 127.0.0.1 at 2016-05-15 05:25:30 +0300
+Processing by Admin::DocumentsController#index as HTML
+  Parameters: {"order"=>"confirmed_asc"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "documents"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT  "documents".* FROM "documents"  ORDER BY "documents"."confirmed" asc LIMIT 30 OFFSET 0[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mFaculty Load (0.2ms)[0m  [1mSELECT "faculties".* FROM "faculties"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/index.html.arb (298.3ms)
+Completed 200 OK in 315ms (Views: 305.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-15 05:25:49 +0300
+Processing by UniversitiesController#index as HTML
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  "universities".* FROM "universities" LIMIT 12 OFFSET 0[0m
+  Rendered universities/_university.html.slim (7.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "universities"
+  Rendered universities/_universities.html.slim (17.1ms)
+  Rendered universities/index.html.slim within layouts/application (36.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_dropdown_menu.html.slim (11.1ms)
+  Rendered layouts/_header.html.slim (21.8ms)
+  Rendered layouts/_messages.html.slim (4.6ms)
+Completed 200 OK in 283ms (Views: 281.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/universities/1" for 127.0.0.1 at 2016-05-15 05:25:51 +0300
+Processing by UniversitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUniversity Load (0.4ms)[0m  SELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1 OFFSET 0  [["id", 1]]
+  [1m[36mFaculty Load (0.2ms)[0m  [1mSELECT "faculties".* FROM "faculties" WHERE "faculties"."university_id" = ?[0m  [["university_id", 1]]
+  Rendered faculties/_faculty.html.slim (7.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "faculties" WHERE "faculties"."university_id" = ?  [["university_id", 1]]
+  Rendered faculties/_faculties.html.slim (24.1ms)
+  Rendered universities/show.html.slim within layouts/application (45.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_dropdown_menu.html.slim (6.2ms)
+  Rendered layouts/_header.html.slim (13.9ms)
+  Rendered layouts/_messages.html.slim (4.0ms)
+Completed 200 OK in 253ms (Views: 251.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/universities/1/faculties/1" for 127.0.0.1 at 2016-05-15 05:25:53 +0300
+Processing by FacultiesController#show as HTML
+  Parameters: {"university_id"=>"1", "id"=>"1"}
+  [1m[35mFaculty Load (0.3ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_modaldoc.html.slim (68.5ms)
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ? LIMIT 12 OFFSET 0[0m  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_document.html.slim (16.6ms)
+  Rendered documents/_document.html.slim (4.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ?  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_documents.html.slim (32.8ms)
+  Rendered faculties/show.html.slim within layouts/application (114.1ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.5ms)
+  Rendered layouts/_header.html.slim (1.8ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 287ms (Views: 285.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/universities/1/faculties/1/documents" for 127.0.0.1 at 2016-05-15 05:26:07 +0300
+Processing by DocumentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QLZAP18VXFIfIotbEEN9/4s1snCaTVzx5xK5kCCESxG5R32p3H4XhriJraW/0xWX+2jdk1J8Zy1nMWX2byIu+w==", "document"=>{"title"=>"1", "description"=>"111111", "document"=>#<ActionDispatch::Http::UploadedFile:0x007f5418087190 @tempfile=#<Tempfile:/tmp/RackMultipart20160515-4535-1b48byr.doc>, @original_filename="Примеры предметных областей для лабораторных работ.doc", @content_type="application/msword", @headers="Content-Disposition: form-data; name=\"document[document]\"; filename=\"\xD0\x9F\xD1\x80\xD0\xB8\xD0\xBC\xD0\xB5\xD1\x80\xD1\x8B \xD0\xBF\xD1\x80\xD0\xB5\xD0\xB4\xD0\xBC\xD0\xB5\xD1\x82\xD0\xBD\xD1\x8B\xD1\x85 \xD0\xBE\xD0\xB1\xD0\xBB\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD0\xB9 \xD0\xB4\xD0\xBB\xD1\x8F \xD0\xBB\xD0\xB0\xD0\xB1\xD0\xBE\xD1\x80\xD0\xB0\xD1\x82\xD0\xBE\xD1\x80\xD0\xBD\xD1\x8B\xD1\x85 \xD1\x80\xD0\xB0\xD0\xB1\xD0\xBE\xD1\x82.doc\"\r\nContent-Type: application/msword\r\n">}, "button"=>"", "university_id"=>"1", "faculty_id"=>"1"}
+Command :: file -b --mime '/tmp/7da2f6c321827a0d1c234f9999fa108f20160515-4535-15ld0ry.doc'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/tmp/7da2f6c321827a0d1c234f9999fa108f20160515-4535-2esxsy.doc'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "documents" ("title", "description", "document_file_name", "document_content_type", "document_file_size", "document_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "1"], ["description", "111111"], ["document_file_name", "Примеры_предметных_областей_для_лабораторных_работ.doc"], ["document_content_type", "application/msword"], ["document_file_size", 13312], ["document_updated_at", "2016-05-15 02:26:07.400265"], ["created_at", "2016-05-15 02:26:07.444181"], ["updated_at", "2016-05-15 02:26:07.444181"]]
+  [1m[36m (142.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mFaculty Load (0.2ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "faculty_id" = ?, "user_id" = ?, "updated_at" = ? WHERE "documents"."id" = ?[0m  [["faculty_id", 1], ["user_id", 3], ["updated_at", "2016-05-15 02:26:07.616196"], ["id", 21]]
+  [1m[35m (148.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/universities/1/faculties/1
+Completed 302 Found in 373ms (ActiveRecord: 292.0ms)
+
+
+Started GET "/universities/1/faculties/1" for 127.0.0.1 at 2016-05-15 05:26:07 +0300
+Processing by FacultiesController#show as HTML
+  Parameters: {"university_id"=>"1", "id"=>"1"}
+  [1m[36mFaculty Load (0.2ms)[0m  [1mSELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_modaldoc.html.slim (20.0ms)
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ? LIMIT 12 OFFSET 0  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_document.html.slim (23.4ms)
+  Rendered documents/_document.html.slim (4.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ?[0m  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_documents.html.slim (39.7ms)
+  Rendered faculties/show.html.slim within layouts/application (72.7ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.5ms)
+  Rendered layouts/_header.html.slim (1.7ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 265ms (Views: 262.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/documents" for 127.0.0.1 at 2016-05-15 05:26:13 +0300
+Processing by Admin::DocumentsController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "documents"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT  "documents".* FROM "documents"  ORDER BY "documents"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mFaculty Load (0.2ms)[0m  [1mSELECT "faculties".* FROM "faculties"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/index.html.arb (327.5ms)
+Completed 200 OK in 335ms (Views: 329.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/documents/21" for 127.0.0.1 at 2016-05-15 05:26:19 +0300
+Processing by Admin::DocumentsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mFaculty Load (0.1ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Document"], ["resource_id", "21"], ["namespace", "admin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = ? AND "active_admin_comments"."namespace" = ?  [["resource_type", "Document"], ["resource_id", "21"], ["namespace", "admin"]]
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/show.html.arb (252.3ms)
+Completed 200 OK in 291ms (Views: 285.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/documents/21/edit" for 127.0.0.1 at 2016-05-15 05:26:23 +0300
+Processing by Admin::DocumentsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1[0m  [["id", "21"]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mFaculty Load (0.3ms)[0m  [1mSELECT "faculties".* FROM "faculties"[0m
+  [1m[35mFaculty Load (0.1ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/edit.html.arb (300.6ms)
+Completed 200 OK in 328ms (Views: 320.5ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/admin/documents/21" for 127.0.0.1 at 2016-05-15 05:26:41 +0300
+Processing by Admin::DocumentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNbQJe53OcwedB+MVU+sXTYEaDTcJNwgKdljax/XJ0aFJ+2zbRxyGLnfOXL638Q1RlkH1xQV5/yp+r8NUHFCrA==", "document"=>{"category_id"=>"", "faculty_id"=>"1", "user_id"=>"3", "title"=>"1", "description"=>"111111", "points"=>"10", "confirmed"=>"1", "document_file_name"=>"Примеры_предметных_областей_для_лабораторных_работ.doc", "document_content_type"=>"application/msword", "document_file_size"=>"13312", "document_updated_at(1i)"=>"2016", "document_updated_at(2i)"=>"5", "document_updated_at(3i)"=>"15", "document_updated_at(4i)"=>"02", "document_updated_at(5i)"=>"26"}, "commit"=>"Update Document", "id"=>"21"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mDocument Load (0.1ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1  [["id", 21]]
+Unpermitted parameters: document_file_name, document_content_type, document_file_size, document_updated_at(1i), document_updated_at(2i), document_updated_at(3i), document_updated_at(4i), document_updated_at(5i)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "documents" SET "points" = ?, "confirmed" = ?, "updated_at" = ? WHERE "documents"."id" = ?  [["points", 10], ["confirmed", "t"], ["updated_at", "2016-05-15 02:26:41.939988"], ["id", 21]]
+  [1m[36m (155.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "user_points" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["user_points", 37], ["updated_at", "2016-05-15 02:26:42.101727"], ["id", 3]]
+  [1m[35m (149.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/documents
+Completed 302 Found in 326ms (ActiveRecord: 306.8ms)
+
+
+Started GET "/admin/documents" for 127.0.0.1 at 2016-05-15 05:26:42 +0300
+Processing by Admin::DocumentsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "documents"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "documents" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mDocument Load (0.5ms)[0m  SELECT  "documents".* FROM "documents"  ORDER BY "documents"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mFaculty Load (0.3ms)[0m  SELECT "faculties".* FROM "faculties"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered /home/tupickiy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/bundler/gems/activeadmin-e72c62b01397/app/views/active_admin/resource/index.html.arb (338.0ms)
+Completed 200 OK in 349ms (Views: 338.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/universities/1/faculties/1" for 127.0.0.1 at 2016-05-15 05:26:50 +0300
+Processing by FacultiesController#show as HTML
+  Parameters: {"university_id"=>"1", "id"=>"1"}
+  [1m[35mFaculty Load (0.2ms)[0m  SELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_modaldoc.html.slim (20.7ms)
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ? LIMIT 12 OFFSET 0[0m  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_document.html.slim (20.9ms)
+  Rendered documents/_document.html.slim (7.4ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."faculty_id" = ? AND "documents"."confirmed" = ?  [["faculty_id", 1], ["confirmed", "t"]]
+  Rendered documents/_documents.html.slim (41.4ms)
+  Rendered faculties/show.html.slim within layouts/application (78.2ms)
+  Rendered layouts/_dropdown_menu.html.slim (0.6ms)
+  Rendered layouts/_header.html.slim (1.9ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 264ms (Views: 261.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/universities/1/faculties/1/documents/21" for 127.0.0.1 at 2016-05-15 05:26:54 +0300
+Processing by DocumentsController#show as JS
+  Parameters: {"university_id"=>"1", "faculty_id"=>"1", "id"=>"21"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT  "universities".* FROM "universities" WHERE "universities"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFaculty Load (0.1ms)[0m  [1mSELECT  "faculties".* FROM "faculties" WHERE "faculties"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered documents/_modal.html.slim (18.6ms)
+  Rendered documents/show.js.coffee (427.5ms)
+Completed 200 OK in 454ms (Views: 452.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-15 05:27:07 +0300
+Processing by UniversitiesController#index as HTML
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT  "universities".* FROM "universities" LIMIT 12 OFFSET 0
+  Rendered universities/_university.html.slim (3.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "universities"[0m
+  Rendered universities/_universities.html.slim (10.0ms)
+  Rendered universities/index.html.slim within layouts/application (11.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_dropdown_menu.html.slim (0.6ms)
+  Rendered layouts/_header.html.slim (3.2ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 196ms (Views: 194.5ms | ActiveRecord: 0.6ms)
