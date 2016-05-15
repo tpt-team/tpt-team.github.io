@@ -51311,6 +51311,28 @@ Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2016-05-15 04:51:33 +0300
+<<<<<<< HEAD
+>>>>>>> cb5870f64a7e23d13bfcc21248d7c36691a99e2d
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "universities" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Черкасский институт банковского дела"], ["created_at", "2016-05-15 06:18:02.365296"], ["updated_at", "2016-05-15 06:18:02.365296"]]
+  [1m[35m (120.5ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "universities" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "Восточноевропейский университет экономики и менеджмента (ВУЭМ)"], ["created_at", "2016-05-15 06:18:02.506852"], ["updated_at", "2016-05-15 06:18:02.506852"]]
+  [1m[36m (138.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "universities" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Черкасский государственный технологический университет (ЧГТУ)"], ["created_at", "2016-05-15 06:18:02.651443"], ["updated_at", "2016-05-15 06:18:02.651443"]]
+  [1m[35m (140.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "universities" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "Черкасский институт пожарной безопасности имени Героев Чернобыля"], ["created_at", "2016-05-15 06:18:02.796982"], ["updated_at", "2016-05-15 06:18:02.796982"]]
+  [1m[36m (140.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "universities" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Черкасский национальный университет им. Богдана Хмельницкого (ЧНУ)"], ["created_at", "2016-05-15 06:18:02.941889"], ["updated_at", "2016-05-15 06:18:02.941889"]]
+  [1m[35m (130.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "universities" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "Черкасский филиал Харьковского аэрокосмического унирерситета им. Н. Е. Жуковского"], ["created_at", "2016-05-15 06:18:03.075509"], ["updated_at", "2016-05-15 06:18:03.075509"]]
+  [1m[36m (132.3ms)[0m  [1mcommit transaction[0m
+=======
 
 
 Started GET "/" for 127.0.0.1 at 2016-05-15 05:22:28 +0300
@@ -51770,3 +51792,4 @@ Processing by UniversitiesController#index as HTML
   Rendered layouts/_header.html.slim (3.2ms)
   Rendered layouts/_messages.html.slim (0.1ms)
 Completed 200 OK in 196ms (Views: 194.5ms | ActiveRecord: 0.6ms)
+>>>>>>> 603d343eb33ff5afbc20f5a781d8b7449336ba83
