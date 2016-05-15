@@ -2,7 +2,7 @@ ol.breadcrumb
   li
     = link_to "Университеты/", root_path
   li.active =university.title
-- university.faculties.each_slice(4) do |group|
+- university.faculties.each_slice(6) do |group|
   .row
     = render partial: 'faculties/faculty', collection: group
 = paginate university.faculties.page(params[:page]).per(12)

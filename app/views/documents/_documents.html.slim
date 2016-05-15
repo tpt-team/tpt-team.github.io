@@ -1,5 +1,11 @@
 = render 'layouts/categoriesbar'
-- documents.where(confirmed: true, category_id: params[:format]).page(params[:page]).per(12).each_slice(6) do |group|
-  .row
-    = render partial: 'documents/document', collection: group
-= paginate faculty.documents.where(confirmed: true).page(params[:page]).per(12)
+- if params[:format]
+  - documents.where(confirmed: true, category_id: params[:format] ).page(params[:page]).per(12).each_slice(6) do |group|
+    .row
+      = render partial: 'documents/document', collection: group
+  = paginate faculty.documents.where(confirmed: true).page(params[:page]).per(12)
+- else
+  - documents.where(confirmed: true).page(params[:page]).per(12).each_slice(6) do |group|
+    .row
+      = render partial: 'documents/document', collection: group
+  = paginate faculty.documents.where(confirmed: true).page(params[:page]).per(12)
