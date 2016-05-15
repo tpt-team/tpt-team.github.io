@@ -1,13 +1,13 @@
 .page-header
   h1
     = faculty.title
-= link_to "Университеты/", root_path
-= link_to university.title.to_s + "/", university
-= link_to faculty.title, university_faculty_path(university.id, faculty.id)
-= simple_form_for ([university, faculty, faculty.documents.build]) do |f|
-  = f.input :title
-  = f.input :description
-  = f.file_field :document
-  = f.button :button, :OK, class: 'btn-primary'
+ol.breadcrumb
+  li
+    = link_to "Университеты/", root_path
+  li
+    = link_to university.title.to_s + "/", university
+  li.active =faculty.title
+- if current_user
+  = render 'layouts/modaldoc'
 br
 = render 'documents/documents', documents: faculty.documents
