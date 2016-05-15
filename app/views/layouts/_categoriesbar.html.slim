@@ -1,0 +1,6 @@
+ul.nav.nav-tabs.nav-justified
+  li role="presentation" class=('active' unless params[:format])
+   = link_to 'All', university_faculty_path(university.id, faculty.id)
+  - categories.each do |c|
+    li role="presentation" class=('active' if params[:format].to_i == c.id)
+      = link_to c.title, university_faculty_path(university.id, faculty.id, c.id)

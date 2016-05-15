@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   root 'universities#index'
 
+  get 'categories/(:id)', to: 'faculties#show', as: :categories
 
   resources :universities do
     resources :faculties do
