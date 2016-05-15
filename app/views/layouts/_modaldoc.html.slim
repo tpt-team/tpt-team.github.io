@@ -1,0 +1,16 @@
+section#document-mod
+  a.forget.btn.btn-custom data-target=".forget-modal" data-toggle="modal" href="javascript:;" Добавить файл
+.modal.fade.forget-modal aria-hidden="true" aria-labelledby="myForgetModalLabel" role="dialog" tabindex="-1"
+  .modal-dialog.modal-sm
+    .modal-content
+      .modal-header
+        button.close data-dismiss="modal" type="button"
+          span aria-hidden="true"  ×
+          span.sr-only Закрыть
+        h4.modal-title Добавить файл
+      .modal-body
+        = simple_form_for ([university, faculty, faculty.documents.build]) do |f|
+          = f.input :title, label: false, class: "form-control", placeholder: "Введите название файла"
+          = f.input :description, label: false, class: "form-control", placeholder: "Описание"
+          = f.input :document, as: :file
+          = f.button :button, :OK, class: 'btn-custom'
