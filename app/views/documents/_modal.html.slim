@@ -19,4 +19,7 @@
                 .col-sm-8
                   = "Размер файла: #{document.document_file_size / 1024} Kb"
                 .col-sm-3
-                  = link_to "Download", document.document.url(:original, false), class: 'btn btn-custom'
+                  - if current_user.user_points >= document.points
+                      = link_to "Скачать(#{document.points} б.)", download_university_faculty_document_path(university.id, faculty.id, document), method: :get, class: 'btn btn-custom', id: "points_#{document.points}"
+                  - else
+                    h5.text-center Недостаточно балов

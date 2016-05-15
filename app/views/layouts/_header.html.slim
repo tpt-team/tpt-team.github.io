@@ -6,7 +6,7 @@ nav.navbar.navbar-default role="navigation"
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
     ul.nav.navbar-nav.navbar-right
       - if user_signed_in?
-        li
+        li#current-points
           = link_to ' ' do
             span.glyphicon.glyphicon-copyright-mark
               = current_user.user_points
