@@ -14,7 +14,11 @@ Rails.application.routes.draw do
 
   resources :universities do
     resources :faculties do
-      resources :documents
+      resources :documents do
+        member do
+          get :download
+        end
+      end
     end
   end
 
