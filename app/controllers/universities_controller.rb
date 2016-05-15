@@ -1,7 +1,7 @@
 class UniversitiesController < ApplicationController
 
   expose(:university)
-  expose(:universities) {|default| default.page(params[:page]).per(8)}
+  expose(:universities) {|default| default.page(params[:page]).per(12)}
 
   def create
     university.save
