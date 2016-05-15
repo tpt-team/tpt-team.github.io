@@ -3,6 +3,7 @@ class DocumentsController < ApplicationController
   expose(:document, attributes: :document_params)
   expose(:documents)# {|default| default.where(confirmed: true).page(params[:page]).per(8)}
   expose(:faculty)
+  expose(:university)
 
   def create
     if document.save
@@ -19,6 +20,11 @@ class DocumentsController < ApplicationController
 
   def destroy
     document.destroy
+  end
+
+  def download
+    current_user.update_attributes(user_points: current_user.user_points - document.points)
+    redirect_to document.document.url(:original, false)
   end
 
   private
