@@ -1,4 +1,4 @@
-- documents.where(confirmed: true).page(params[:page]).per(8).each_slice(4) do |group|
+- documents.where(confirmed: true).page(params[:page]).per(12).each_slice(6) do |group|
   .row
     = render partial: 'documents/document', collection: group
-= paginate faculty.documents.where(confirmed: true).page(params[:page]).per(8)
+= paginate faculty.documents.where(confirmed: true).page(params[:page]).per(12)
