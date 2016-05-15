@@ -16,9 +16,10 @@
             = document.description
             .modal-footer
               .row
-                .col-sm-8
+                .col-sm-7
                   = "Размер файла: #{document.document_file_size / 1024} Kb"
-                .col-sm-3
+                .col-sm-5
+                  = "Скачиваний: #{document.downloads}"
                   - if current_user.user_points >= document.points
                       = link_to "Скачать(#{document.points} б.)", download_university_faculty_document_path(university.id, faculty.id, document), method: :get, class: 'btn btn-custom', id: "points_#{document.points}"
                   - else
