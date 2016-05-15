@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   belongs_to :university
   has_many :documents
 
+  validates :university, presence: true
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable
