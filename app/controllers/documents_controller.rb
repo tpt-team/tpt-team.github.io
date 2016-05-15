@@ -25,7 +25,9 @@ class DocumentsController < ApplicationController
 
   def download
     current_user.update_attributes(user_points: current_user.user_points - document.points)
+    document.increment
     redirect_to document.document.url(:original, false)
+
   end
 
   private
