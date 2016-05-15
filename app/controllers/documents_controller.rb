@@ -9,6 +9,7 @@ class DocumentsController < ApplicationController
     if document.save
       document.update_attributes(faculty_id: faculty.id, user_id: current_user.id)
       redirect_to university_faculty_path(params[:university_id], faculty)
+      flash[:success] = 'Документ загружен и находится в обработке'
     else
       redirect_to university_faculty_path(params[:university_id], faculty)
     end
