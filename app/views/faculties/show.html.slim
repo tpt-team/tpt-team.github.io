@@ -3,9 +3,9 @@
     = faculty.title
 ol.breadcrumb
   li
-    = link_to "Университеты/", root_path
+    = link_to "Университеты", root_path
   li
-    = link_to university.title.to_s + "/", university
+    = link_to university.title, university
   li.active =faculty.title
 - if current_user
   = render 'layouts/modaldoc'
